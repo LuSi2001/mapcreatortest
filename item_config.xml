@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pinballitem>
+    <items>
+        <autoplunger name="autoplunger">
+            <width>50</width>
+            <height>100</height>
+            <color>black</color>
+        </autoplunger>
+        <ball name="ball">
+            <radius>25</radius>
+            <color>gray</color>
+        </ball>
+        <bumper name="bumper">
+            <outerradius>10.16</outerradius>
+            <innerradius>6.16</innerradius>
+            <outercolor>red</outercolor>
+            <innercolor>white</innercolor>
+        </bumper>
+        <coin name="coin">
+            <radius>5</radius>
+            <color>yellow</color>
+            <text>1</text>
+        </coin>
+        <flipperright name="flipperright">
+            <width>50</width>
+            <height>100</height>
+            <color>green</color>
+            <maxrotation>45</maxrotation>
+        </flipperright>
+        <flipperleft name="flipperleft">
+            <width>50</width>
+            <height>100</height>
+            <color>green</color>
+            <maxrotation>45</maxrotation>
+        </flipperleft>
+        <manualplunger name="manualplunger">
+            <width>50</width>
+            <height>100</height>
+            <color>black</color>
+        </manualplunger>
+        <slingshot name="slingshot">
+            <width>100</width>
+            <height>100</height>
+            <color>blue</color>
+        </slingshot>
+    </items>
+    <field>
+        <ballcounterfield name="ballcounterfield">
+            <width>100</width>
+            <height>50</height>
+            <start>1</start>
+        </ballcounterfield>
+        <pointmultiplierfield name="pointmultiplierfield">
+            <width>100</width>
+            <height>100</height>
+        </pointmultiplierzone>
+        <scorefield name="scorefield">
+            <width>100</width>
+            <height>50</height>
+            <start>0</start>
+        </scorefield>
+        <timerfield name="timerfield">
+            <width>100</width>
+            <height>50</height>
+            <start>0</start>
+        </timerfield>
+    </field>
+    <zone>
+        <endzone name="endzone">
+            <width>100</width>
+            <height>100</height>
+        </endzone>
+    </zone>
+</pinballitem>
