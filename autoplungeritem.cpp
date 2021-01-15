@@ -1,6 +1,7 @@
 #include "autoplungeritem.h"
 #include "geometrylib.h"
 #include "velocityengine.h"
+#include "readerproxy.h"
 
 #include <QPainter>
 
@@ -90,4 +91,9 @@ void AutoPlungerItem::handleCollision(Vec3 &m_velocity, Vec3&, QTime& time)
     double dt = 0;
     velo::VelocityEngine::inst().preciseVelocityPolygon(time, dt, m_edges, m_extEdges,
                                                         m_vertices, m_velocity);
+}
+
+void AutoPlungerItem::readFromXML(const ReaderProxy &reader)
+{
+    reader.setCurPinballItem(name());
 }

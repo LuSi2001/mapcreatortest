@@ -1,5 +1,6 @@
 #include "ballitem.h"
 #include "velocityengine.h"
+#include "readerproxy.h"
 
 #include <QPainter>
 
@@ -33,4 +34,11 @@ void BallItem::handleCollision(Vec3 &m_velocity, Vec3 &, QTime &time)
 {
     double dt = 0;
     velo::VelocityEngine::inst().preciseVelocityCircle(time, dt, m_velocity);
+}
+
+void BallItem::readFromXML(const ReaderProxy& reader)
+{
+    reader.setCurPinballItem(name());
+    reader.readXML("radius", m_radius);
+    reader.readXML("color", m_color);
 }

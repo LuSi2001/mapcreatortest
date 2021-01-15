@@ -18,6 +18,8 @@ public:
     const QString name() const override;
     void handleCollision(Vec3& m_velocity, Vec3 &, QTime &time) override;
 
+    void readFromXML(const ReaderProxy& reader) override;
+
 private:
     std::map<Vec3, Vec3> m_bisectrices;
 
@@ -25,6 +27,11 @@ private:
 
     std::vector<geo::LineSeg> m_edges;
     std::vector<geo::LineSeg> m_extEdges;
+
+    double m_width;
+    double m_height;
+    double m_thickness;
+    QColor m_color;
 };
 
 #endif // AUTOPLUNGERITEM_H

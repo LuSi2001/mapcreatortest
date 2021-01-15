@@ -40,7 +40,7 @@
     </widget>
    </item>
    <item>
-    <widget class="QPushButton" name="manualplunger">
+    <widget class="QPushButton" name="manualplungerBtn">
      <property name="text">
       <string>Manual plunger</string>
      </property>

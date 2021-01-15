@@ -5,6 +5,7 @@
         <autoplunger name="autoplunger">
             <width>50</width>
             <height>100</height>
+            <thickness>5</thickness>
             <color>black</color>
         </autoplunger>
         <ball name="ball">
@@ -37,6 +38,7 @@
         <manualplunger name="manualplunger">
             <width>50</width>
             <height>100</height>
+            <thickness>5</thickness>
             <color>black</color>
         </manualplunger>
         <slingshot name="slingshot">

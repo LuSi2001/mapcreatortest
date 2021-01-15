@@ -67,7 +67,8 @@ MainWindow::MainWindow(QWidget *parent) :
         });
         connect(cBox, &ItemBox::createItem, [this](const QString& name)
         {
-            qDebug() << name;
+            setCursor(QCursor(Qt::PointingHandCursor));
+            //m_editorscene->createItem(name);
         });
     }
 }
@@ -151,8 +152,6 @@ void MainWindow::on_load_clicked()
 
 void MainWindow::updateMatrix(const qreal &scale, const qreal &rotation, const QPointF &viewPos)
 {
-//    ui->editorSceneView->resetTransform();
-//    ui->editorSceneView->translate(viewPos.x(), viewPos.y());
     ui->editorSceneView->scale(scale, scale);
     ui->editorSceneView->rotate(rotation);
 

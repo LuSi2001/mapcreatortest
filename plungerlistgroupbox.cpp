@@ -19,9 +19,9 @@ PlungerListGroupBox::PlungerListGroupBox(QWidget *parent) :
     {
         emit changeItemPage(ITEM_PAGE);
     });
-    connect(ui->manualplunger, &QPushButton::clicked, [this]()
+    connect(ui->manualplungerBtn, &QPushButton::clicked, [this]()
     {
-        QString name = StringEditor::truncatedName(ui->manualplunger);
+        QString name = StringEditor::truncatedName(ui->manualplungerBtn);
         emit createItem(name);
     });
     connect(ui->autoplungerBtn, &QPushButton::clicked, [this]()
